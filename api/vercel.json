@@ -9,12 +9,8 @@
     ],
     "routes": [
         {
-            "src": "/mail/(.*)",
+            "src": "/day/(.*)",
             "dest": "/index.js"       
-        },
-        {
-            "src": "/component/(.*)",
-            "dest": "/index.js"          
         },
         {
             "src": "/(.*)",
