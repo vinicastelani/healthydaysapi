@@ -1,0 +1,30 @@
+{
+    "name": "healthydayslAPI",
+    "version": 2,
+    "builds": [
+        {
+            "src": "*.js",
+            "use": "@now/node-server"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/mail/(.*)",
+            "dest": "/index.js"       
+        },
+        {
+            "src": "/component/(.*)",
+            "dest": "/index.js"          
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/index.js"        
+        }
+     
+    ],
+    "env": {
+        "MONGODB_URI": "@server-uri",
+        "DB_USERNAME": "vinicastelani",
+        "DB_PASSWORD": "vini110297"
+    }
+}
